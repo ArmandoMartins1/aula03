@@ -11,4 +11,7 @@ media = (nota1 + nota2 + nota3) / 3
 if media >= 7:
     print(f"Aluno aprovado\nMedia: {media:.2f}")
 else:
-    print(f"Aluno Reprovado\nMedia {media:.2f}")
+    if media <4:
+        print(f"Aluno reprovado\nMedia {media:.2f}")
+    else:
+        print(f"Aluno em recuperação\n Media {media:.2f}")
