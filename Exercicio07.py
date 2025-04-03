@@ -24,7 +24,7 @@ else:
             else:
                 print("Tipo do combustivel não identificado!")
 '''
-
+'''
 if tipoCombustivel == "G":
     valor = combustivel * gasolina
 else:
@@ -38,5 +38,13 @@ else:
                 valor = combustivel * etanol
             else:
                 print("Tipo incorreto!")
+'''
+
+if tipoCombustivel == "G" or tipoCombustivel == "g":
+    valor = combustivel*gasolina
+elif tipoCombustivel == "e" or tipoCombustivel == "E":
+    valor = combustivel*etanol
+else:
+    print("Tipo incorreto!")
 
 print(f"O valor a ser pago é R${valor:.2f}")
